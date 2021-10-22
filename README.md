@@ -4,12 +4,14 @@ This repository contains basic JAVA practice programs and implementations of Dat
 
 ### Index
 + JAVA practice programs
++ Maps/Dictionaries
 + Arrays
 + Recursion
 + Linked Lists
 + Stacks
 + Queues
 + Trees
++ Heaps
 + Graphs
 + Searching and Sorting
 + Backtracking
