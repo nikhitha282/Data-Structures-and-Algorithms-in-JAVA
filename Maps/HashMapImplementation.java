@@ -1,7 +1,7 @@
 //Hash map implementation using collections
 import java.util.*;
 
-public class HashMap {
+public class HashMapImplementation {
   public static void main(String[] args) {
     Map<Integer, Integer> hashmap = new HashMap<>();
     hashmap.put(1,1);
