@@ -1,4 +1,6 @@
-public class HashSet {
+import java.util.*;
+
+public class HashSetImplementation {
   public static voic main(String[] args) {
       Set<Integer> hashSet = new HashSet<>();
       //Add keys
