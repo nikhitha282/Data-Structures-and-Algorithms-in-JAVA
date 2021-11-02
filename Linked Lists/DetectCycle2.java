@@ -38,3 +38,47 @@ public class DetectCycle2 {
         return null;
     }
 }
+
+/*
+O(1) memory solution: Does not use hashmap
+
+public class DetedtCycle2 {
+    public ListNode detectCycle(ListNode head) {
+        
+        if(head == null) return null;
+        
+        ListNode slow = head, fast = head;
+        
+        while(fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+            if(fast == null) return null;
+            if(fast == slow) return cycleHead(head, slow.next, fast); //if cycle is present, call this method to find the start of the cycle
+        }
+        
+        return null;
+    }
+    
+    public ListNode cycleHead(ListNode head, ListNode slow, ListNode fast) {
+        
+        ListNode cyclehead = head;
+        
+        while(cyclehead != slow) {  
+         
+            while(slow != fast) {
+             
+                slow = slow.next;
+                if(slow == cyclehead) return cyclehead;
+             
+            }
+         
+            cyclehead = cyclehead.next;
+            slow = slow.next;
+         
+        }
+     
+        return cyclehead;
+    }
+ 
+}
+*/
